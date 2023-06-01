@@ -9,7 +9,7 @@ import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 function App() {
   const theme = useTheme();
   return (
-    <div className="md:m-4 min-h-screen">
+    <div className="xl:m-16 lg:m-12 sm:x-6 m-0 min-h-screen">
       <Card
         sx={{
           borderRadius: "24px",
@@ -20,9 +20,11 @@ function App() {
       >
         <CardContent
           sx={{
-            padding: "64px!important",
-            [theme.breakpoints.down("md")]: {
-              padding: "24px 0!important",
+            padding: {
+              sm: "24px !important",
+              md: "48px !important",
+              lg: "64px !important",
+              xs: "24px 0px 12px 0px !important",
             },
           }}
         >
@@ -59,7 +61,7 @@ function App() {
               ))}
             </div>
           </div>
-          <hr className="hidden md:block border-t-0 h-[1px] bg-[#E2E2E2] opacity-[100] mb-16 mt-52" />
+          <hr className="hidden md:block border-t-0 h-[1px] bg-[#E2E2E2] opacity-[100] xl:my-16 lg:my-12 my-6" />
           <div className="grid grid-cols-12 mt-8 md:mt-0">
             {/* devices */}
             <div className="flex flex-col col-span-12 md:col-span-4 border-[#E2E2E2] md:border-r border-b md:border-b-0 md:pr-4 pb-4 md:pb-0">
