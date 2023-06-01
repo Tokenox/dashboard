@@ -20,6 +20,11 @@ const DevicesChart = () => {
     legend: {
       show: true,
       position: "bottom",
+      fontSize: "14px",
+      horizontalAlign: "left",
+      markers: {
+        radius: 3,
+      },
     },
 
     responsive: [
@@ -27,8 +32,7 @@ const DevicesChart = () => {
         breakpoint: 480,
         options: {
           chart: {
-            width: 200,
-            height: 200,
+            height: 300,
           },
           legend: {
             position: "bottom",

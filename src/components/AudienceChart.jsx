@@ -14,6 +14,17 @@ const AudienceChart = () => {
         show: false,
       },
     },
+    legend: {
+      show: true,
+      position: "bottom",
+      horizontalAlign: "left",
+      fontSize: "14px",
+
+      markers: {
+        radius: 3,
+      },
+    },
+
     colors: ["#006ADC", "#CEE7FE", "#FFB224", "#F3F3F3"],
     dataLabels: {
       enabled: false,
@@ -58,6 +69,7 @@ const AudienceChart = () => {
         trim: false,
       },
     },
+
     grid: { yaxis: { lines: { show: false, startonly: false } } },
   });
 
