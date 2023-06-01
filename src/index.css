@@ -1,0 +1,15 @@
+@tailwind base;
+body {
+  background: #f8f8f8;
+}
+.box1 {
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  width: 300px;
+  height: 100px;
+  background: blue;
+  transform: rotate(90deg);
+  position: absolute;
+  bottom: 0;
+}
+@tailwind components;
+@tailwind utilities;
