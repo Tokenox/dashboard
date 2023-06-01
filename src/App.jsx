@@ -9,7 +9,7 @@ import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 function App() {
   const theme = useTheme();
   return (
-    <div className="xl:m-16 lg:m-12 sm:x-6 m-0 min-h-screen">
+    <div className="xl:m-16 lg:m-12 m-0 min-h-screen">
       <Card
         sx={{
           borderRadius: "24px",
