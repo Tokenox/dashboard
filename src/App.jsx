@@ -44,7 +44,8 @@ function App() {
             </div>
           </div>
           <hr className="hidden md:block border-t-0 h-[1px] bg-[#E2E2E2] opacity-[100] xl:my-16 lg:my-12 my-6" />
-          <div className="grid grid-cols-12 mt-8 md:mt-0 h-[425.5px]">
+          {/* <div className="grid grid-cols-12 mt-8 md:mt-0 h-[425.5px]"> */}
+          <div className="grid grid-cols-12 mt-8 md:mt-0">
             {/* devices */}
             <div className="flex flex-col col-span-12 md:col-span-4 border-[#E2E2E2] md:border-r border-b md:border-b-0 md:pr-4 pb-4 md:pb-0">
               <h2 className="md:text-[28px] text-[22px] mb-3 md:mb-0 pl-4 md:pl-0 md:font-semibold font-bold leading-[36.4px] tracking-[-0.01em]">
