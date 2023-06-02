@@ -33,9 +33,13 @@ function App() {
             <h2 className="md:text-[28px] text-[22px] pl-4 md:pl-0 md:font-semibold font-bold leading-[36.4px] tracking-[-0.01em]">
               Sales Funnel
             </h2>
-            <div className="grid grid-cols-2 px-4 md:px-0 md:grid-cols-4 lg:grid-cols-5 gap-4 md:mt-16 mt-8">
+            <div className="grid grid-cols-2 px-4 md:px-0 md:grid-cols-4 gap-4 md:mt-16 mt-8">
               {CARDS_DATA?.map((item) => (
-                <CustomCard key={item.title} title={item.title} value={item.value} />
+                <CustomCard
+                  key={item.title}
+                  title={item.title}
+                  value={item.value}
+                />
               ))}
             </div>
           </div>
@@ -84,8 +88,8 @@ const CARDS_DATA = [
     title: "Initite Checkout",
     value: "872",
   },
-  {
-    title: "Purchase",
-    value: "463",
-  },
+  // {
+  //   title: "Purchase",
+  //   value: "463",
+  // },
 ];
