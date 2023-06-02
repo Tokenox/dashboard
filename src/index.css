@@ -15,6 +15,9 @@ body {
   height: 300px !important;
   width: 300px !important;
 }
-
+.apexcharts-graphical {
+  height: 300px !important;
+  width: 300px !important;
+}
 @tailwind components;
 @tailwind utilities;
