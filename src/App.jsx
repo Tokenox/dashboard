@@ -4,7 +4,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import DevicesChart from "./components/DevicesChart";
 import AudienceChart from "./components/AudienceChart";
-import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import CustomCard from "./components/CustomCard";
 
 function App() {
   const theme = useTheme();
@@ -34,28 +34,8 @@ function App() {
               Sales Funnel
             </h2>
             <div className="grid grid-cols-2 px-4 md:px-0 md:grid-cols-4 lg:grid-cols-5 gap-4 md:mt-16 mt-8">
-              {Array.from({ length: 5 }).map((_, i) => (
-                <div
-                  className={`shadow md:rounded-md border-[#E2E2E2] border-[0.1px] h-[170px] md:h-[190px] lg:h-[210px] text-black px-8 py-4 flex flex-col  space-y-2 group hover:bg-[#006ADC]`}
-                  key={i}
-                >
-                  <div className="flex flex-col space-y-2">
-                    <span className="text-[#6F6F6F] group-hover:text-white mdtext-[22px] text-[16px] font-semibold tracking-[-0.01em] leading-[28.6px]">
-                      Sessions
-                    </span>
-                    <span className="text-[#171717] group-hover:text-white md:text-[35px] text-[22px] md:font-semibold font-bold tracking-[-0.01em] leading-[38.5px]">
-                      9.3K
-                    </span>
-                  </div>
-                  <div className="items-center hidden group-hover:flex">
-                    <span className="text-[#EDF6FF] md:text-[22px] text-[16px] font-semibold tracking-[-0.01em] leading-[130%]">
-                      Insights
-                    </span>
-                    <div className="border-white border rounded-md ml-2 h-6 items-center flex justify-center">
-                      <KeyboardArrowRightIcon sx={{ color: "#EDF6FF" }} />
-                    </div>
-                  </div>
-                </div>
+              {CARDS_DATA?.map((item) => (
+                <CustomCard key={item.title} title={item.title} value={item.value} />
               ))}
             </div>
           </div>
@@ -86,3 +66,26 @@ function App() {
 }
 
 export default App;
+
+const CARDS_DATA = [
+  {
+    title: "Sesions",
+    value: "9.3K",
+  },
+  {
+    title: "Product View",
+    value: "4.7K",
+  },
+  {
+    title: "Add to Card",
+    value: "914",
+  },
+  {
+    title: "Initite Checkout",
+    value: "872",
+  },
+  {
+    title: "Purchase",
+    value: "463",
+  },
+];
