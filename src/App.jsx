@@ -33,12 +33,10 @@ function App() {
             <h2 className="md:text-[28px] text-[22px] pl-4 md:pl-0 md:font-semibold font-bold leading-[36.4px] tracking-[-0.01em]">
               Sales Funnel
             </h2>
-            <div className="grid md:grid-cols-5 md:mt-16 mt-8">
+            <div className="grid grid-cols-2 px-4 md:px-0 md:grid-cols-4 lg:grid-cols-5 gap-4 md:mt-16 mt-8">
               {Array.from({ length: 5 }).map((_, i) => (
                 <div
-                  className={`border-[#E2E2E2] md:border-l ${
-                    i === 4 ? "md:border-r md:border-b-0 border-b" : ""
-                  } md:border-t-0 border-t md:h-[256px] text-black px-8 py-4 flex md:flex-col justify-between items-center md:items-start md:justify-start md:space-y-2 group hover:bg-[#006ADC]`}
+                  className={`shadow md:rounded-md border-[#E2E2E2] border-[0.1px] h-[170px] md:h-[190px] lg:h-[210px] text-black px-8 py-4 flex flex-col  space-y-2 group hover:bg-[#006ADC]`}
                   key={i}
                 >
                   <div className="flex flex-col space-y-2">
@@ -50,7 +48,7 @@ function App() {
                     </span>
                   </div>
                   <div className="items-center hidden group-hover:flex">
-                    <span className="text-[#EDF6FF] text-[22px] font-semibold tracking-[-0.01em] leading-[130%]">
+                    <span className="text-[#EDF6FF] md:text-[22px] text-[16px] font-semibold tracking-[-0.01em] leading-[130%]">
                       Insights
                     </span>
                     <div className="border-white border rounded-md ml-2 h-6 items-center flex justify-center">
@@ -62,7 +60,7 @@ function App() {
             </div>
           </div>
           <hr className="hidden md:block border-t-0 h-[1px] bg-[#E2E2E2] opacity-[100] xl:my-16 lg:my-12 my-6" />
-          <div className="grid grid-cols-12 mt-8 md:mt-0">
+          <div className="grid grid-cols-12 mt-8 md:mt-0 h-[425.5px]">
             {/* devices */}
             <div className="flex flex-col col-span-12 md:col-span-4 border-[#E2E2E2] md:border-r border-b md:border-b-0 md:pr-4 pb-4 md:pb-0">
               <h2 className="md:text-[28px] text-[22px] mb-3 md:mb-0 pl-4 md:pl-0 md:font-semibold font-bold leading-[36.4px] tracking-[-0.01em]">

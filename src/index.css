@@ -11,6 +11,10 @@ body {
   position: absolute;
   bottom: 0;
 }
+.pexcharts-inner {
+  height: 300px !important;
+  width: 300px !important;
+}
 
 @tailwind components;
 @tailwind utilities;
